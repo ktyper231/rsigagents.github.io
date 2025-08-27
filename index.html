@@ -42,6 +42,17 @@
             margin-bottom: 20px;
         }
 
+        .author-link {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .author-link:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+
         .button {
             background-color: #cce7ff;
             color: #333;
@@ -242,7 +253,10 @@
         <!-- Header Section -->
         <div class="header">
             <h1 class="title">TITLE</h1>
-            <p class="subtitle">author 1, author 2</p>
+            <p class="subtitle">
+                <a href="https://author1-website.com" class="author-link" target="_blank">author 1</a>, 
+                <a href="https://author2-website.com" class="author-link" target="_blank">author 2</a>
+            </p>
             <button class="button">button 1</button>
         </div>
 
