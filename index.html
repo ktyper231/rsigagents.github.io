@@ -112,6 +112,59 @@
             margin-right: auto;
         }
 
+        .table-content {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: auto;
+        }
+
+        .evaluation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        .evaluation-table th {
+            background-color: #e9ecef;
+            color: #333;
+            font-weight: bold;
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+            vertical-align: middle;
+        }
+
+        .evaluation-table td {
+            padding: 12px 15px;
+            border: 1px solid #dee2e6;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+
+        .evaluation-table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .evaluation-table tr:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+
+        .criteria-column {
+            width: 200px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .indicators-column {
+            text-align: left;
+        }
+
         .survey-section {
             margin: 50px 0;
             text-align: center;
@@ -172,6 +225,15 @@
                 font-size: 1.2em;
                 margin: 40px 0 25px 0;
             }
+
+            .evaluation-table {
+                font-size: 0.85em;
+            }
+
+            .evaluation-table th,
+            .evaluation-table td {
+                padding: 8px 6px;
+            }
         }
     </style>
 </head>
@@ -186,7 +248,7 @@
 
         <!-- Picture Section -->
         <div class="section picture-section">
-            <img src="images/image_placeholder.jpg" alt="Project Image">
+            <img src="images/your-image.jpg" alt="Project Image">
             <div class="picture-caption">[Paste your picture caption here]</div>
         </div>
 
@@ -249,6 +311,47 @@
             <h2 class="section-title">Prompt template 6</h2>
             <div class="prompt-content">
                 <p>Enter your sixth prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Evaluation Description -->
+        <div class="prompt-type-description">[Paste evaluation description here]</div>
+
+        <!-- Evaluation Rubric Section -->
+        <div class="section">
+            <h2 class="section-title">Evaluation rubric</h2>
+            <div class="table-content">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th class="criteria-column">CRITERION</th>
+                            <th class="indicators-column">GOOD INDICATORS</th>
+                            <th class="indicators-column">BAD INDICATORS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="criteria-column">[Criteria 1]</td>
+                            <td class="indicators-column">[Good indicators for criteria 1]</td>
+                            <td class="indicators-column">[Bad indicators for criteria 1]</td>
+                        </tr>
+                        <tr>
+                            <td class="criteria-column">[Criteria 2]</td>
+                            <td class="indicators-column">[Good indicators for criteria 2]</td>
+                            <td class="indicators-column">[Bad indicators for criteria 2]</td>
+                        </tr>
+                        <tr>
+                            <td class="criteria-column">[Criteria 3]</td>
+                            <td class="indicators-column">[Good indicators for criteria 3]</td>
+                            <td class="indicators-column">[Bad indicators for criteria 3]</td>
+                        </tr>
+                        <tr>
+                            <td class="criteria-column">[Criteria 4]</td>
+                            <td class="indicators-column">[Good indicators for criteria 4]</td>
+                            <td class="indicators-column">[Bad indicators for criteria 4]</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
